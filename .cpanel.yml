@@ -1,0 +1,4 @@
+version: 2
+deployment:
+  web:
+    document_root: public_html
