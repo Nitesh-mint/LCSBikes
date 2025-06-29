@@ -1,4 +1,6 @@
 version: 2
 deployment:
+  tasks:
+    - /bin/rsync -av --exclude 'wp-admin/' --exclude 'wp-includes/' --exclude 'wp-config.php' ./ public_html/
   web:
     document_root: public_html
